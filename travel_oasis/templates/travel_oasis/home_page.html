@@ -1,0 +1,495 @@
+{% load staticfiles %}
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Travel Oasis: destination recommender</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
+    <script src="{% static 'js/jssor.slider-27.0.4.min.js' %}" type="text/javascript"></script>
+    <script type='text/javascript' src="{% static 'jquery-1.11.1.min.js' %}"></script>
+      <script type='text/javascript' src="{% static 'jquery.particleground.js' %}"></script>
+     <script type='text/javascript' src="{% static 'jquery.particleground.min.js' %}"></script>
+      <script type='text/javascript' src="{% static 'js/demo.js' %}"></script>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse<!--expand-lg navbar-light fixed-top-->" id="mainNav">
+      <div class="container">
+         <p style="font-size:160%;">Travel Oasis</p>
+       <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">TravelOasis</a>-->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" >Login/Signup</a>
+                
+            <!-- **************************************************** CHANGES *****************************************************************************-->
+         <a class="nav-link js-scroll-trigger" href="#GetToKnowUs">Get To Know Us</a>
+         <a class="nav-link js-scroll-trigger" href="#HowItWorks">How It Works</a>        
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#MeetUs">Meet Us</a>
+            </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Send Us A Message</a>
+            </li>
+      </ul>
+             <!-- ****************************************************CHANGES TILL HERE*******************************************************************-->
+    
+      </div>
+    </nav>
+
+    <!-- Slider -->
+
+  
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:0,d:600,y:-290,e:{y:27}}],
+              [{b:0,d:1000,y:185},{b:1000,d:500,o:-1},{b:1500,d:500,o:1},{b:2000,d:1500,r:360},{b:3500,d:1000,rX:30},{b:4500,d:500,rX:-30},{b:5000,d:1000,rY:30},{b:6000,d:500,rY:-30},{b:6500,d:500,sX:1},{b:7000,d:500,sX:-1},{b:7500,d:500,sY:1},{b:8000,d:500,sY:-1},{b:8500,d:500,kX:30},{b:9000,d:500,kX:-30},{b:9500,d:500,kY:30},{b:10000,d:500,kY:-30},{b:10500,d:500,c:{x:125.00,t:-125.00}},{b:11000,d:500,c:{x:-125.00,t:125.00}}],
+              [{b:0,d:600,x:535,e:{x:27}}],
+              [{b:-1,d:1,o:-1},{b:0,d:600,o:1,e:{o:5}}],
+              [{b:-1,d:1,c:{x:250.0,t:-250.0}},{b:0,d:800,c:{x:-250.0,t:250.0},e:{c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1},{b:0,d:600,x:-570,o:1,e:{x:6}}],
+              [{b:-1,d:1,o:-1,r:-180},{b:0,d:800,o:1,r:180,e:{r:7}}],
+              [{b:0,d:1000,y:80,e:{y:24}},{b:1000,d:1100,x:570,y:170,o:-1,r:30,sX:9,sY:9,e:{x:2,y:6,r:1,sX:5,sY:5}}],
+              [{b:2000,d:600,rY:30}],
+              [{b:0,d:500,x:-105},{b:500,d:500,x:230},{b:1000,d:500,y:-120},{b:1500,d:500,x:-70,y:120},{b:2600,d:500,y:-80},{b:3100,d:900,y:160,e:{y:24}}],
+              [{b:0,d:1000,o:-0.4,rX:2,rY:1},{b:1000,d:1000,rY:1},{b:2000,d:1000,rX:-1},{b:3000,d:1000,rY:-1},{b:4000,d:1000,o:0.4,rX:-1,rY:-1}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 2000,
+              $Cols: 1,
+              $Align: 0,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions,
+                $Breaks: [
+                  [{d:2000,b:1000}]
+                ]
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin-ext,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+    
+    <div id="jssor_1" style="position:relative;margin:5px auto;top:48px;left:0px;width:980px;height:420px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="{% static 'img/spin.svg' %}" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:420px;overflow:hidden;">
+            <div data-p="170.00">
+                <a href="">
+             
+                  <img src="https://www.indiamapstore.com/image/cache/data/incredible-india-934x290.jpg" title="Example Image Link" width="980" height="420"/>
+                </a>
+            </div>
+            <div data-p="170.00">
+                <a href="http://travel-blog.waytoindia.com/tourist-places-in-north-india/">
+             
+                  <img src="http://travel-blog.waytoindia.com/wp-content/uploads/2017/05/cover_best_north_indian_places-1000x600.jpg" width="980" height="420"/>
+                </a>
+            </div>
+            <div data-p="170.00">
+                <a href="http://travel-blog.waytoindia.com/10-best-places-visit-india-may/">
+             
+                  <img src="http://travel-blog.waytoindia.com/wp-content/uploads/10-best-places-to-visit-in-India.jpg" width="980" height="420"/>
+                </a>
+            </div>
+            <div data-p="170.00">
+                <a href="http://travel-blog.waytoindia.com/trekking-in-himachal/">
+             
+                  <img src="http://travel-blog.waytoindia.com/wp-content/uploads/2017/02/200-1000x600.jpg" width="980" height="420"/>
+                </a>
+            </div>
+
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script><br><br>
+<!-- 0000000000000000000000000000000000000000000000 SHIFA's part 000000000000000000000000000000000000000000000000000-->
+    <!-- Intro Header -->
+    <header class="masthead" id="GetToKnowUs">
+      <div class="intro-body" >
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="shifa-div-write"><div><p id="one">Travel Oasis will help people make smart travel choices and plan
+your trip seamlessly with just a click.</p>
+                  <div><p id="two">We introduce &quot;Travel Oasis”
+which is a web application which will save users from the trouble
+of looking for reviews and suggestions online to find their next
+travel destination!</p>
+                  <p id="three">With globalization there is a high demand for travelling. Many
+agencies are available to book it, pack it and set you off to another
+place. But wait, where&#39;s that another place. Our product optimizes
+your choices by specifically focusing on your personality and
+answers to our unique questions to recommend you the right
+place to go.
+                  </p></div>
+              </div>
+              <div  class="col-md-6">
+              </div >
+                    <span style="color:black"> Clicked with <span style="color:darkred;font-size: 30px">&hearts;</span>by the team.</span>
+              </div> 
+            
+          </div>
+              <div id="particles" class="col-md-6"></div>
+        </div>
+            <span ><a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a></span>
+      </div>
+        </div>
+    </header>
+
+
+
+        <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MY SECTION--HOW IT WORKS!!!! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+        <!-- HOW IT WORKS section -->
+    <section id="HowItWorks" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2 style=" font-weight: 800; text-align: center; font-size: 40px; ">HOW IT WORKS</h2>
+            <p style=" font-style:normal ;" style= "font-size: 28px; font-style:bold;" style=" text-align: center;"style= "font-weight: 800; " >Confused? How to get about this?<br>Let's Begin the Journey to the wonderful Destinations...</p>
+            <p style=" font-style:normal; font-size: 30px;text-align:center; ">
+               STEP1: Let us start by Signing up!  </p>
+            
+            
+                
+                <p style=" font-style:normal; font-size: 30px;text-align: center;  ">
+              STEP2: Now, all set for Logging in! </p>
+            
+            
+            <p style="font-style:normal;font-size: 30px;text-align: center;  ">
+         STEP3: Let's play a game to know<br> you better!</p>
+           
+        
+            <p style="font-style:normal; font-size: 30px;text-align: center; ">
+         STEP4: Here You go with the set of<br> places best suited to you!  </p>
+            
+        </div>
+      </div>
+    </section>
+        
+        
+        <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%MY SECTION ENDS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+        <!-- About Section -->
+    
+  <section class="team" id="MeetUs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="col-lg-12">
+          <h6 class="description">OUR TEAM</h6>
+          <div class="row pt-md">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="http://nabeel.co.in/files/bootsnipp/team/1.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>Shifa Samreen</h1>
+              <h2>Co-founder/ Operations</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+              
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="http://nabeel.co.in/files/bootsnipp/team/2.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>Preeti Saharan</h1>
+              <h2>Co-founder/ Projects</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="http://nabeel.co.in/files/bootsnipp/team/3.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+                <br>
+              <h1>Bhavya Bansal</h1>
+              <h2>Co-founder/ Marketing</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="http://nabeel.co.in/files/bootsnipp/team/4.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>Bhawna Sharma</h1>
+              <h2>Designer</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="http://nabeel.co.in/files/bootsnipp/team/5.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>Shreya Mukharjee</h1>
+              <h2>Web Developer</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="http://nabeel.co.in/files/bootsnipp/team/6.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h1>Kritika Sirya</h1>
+              <h2>Fullstack Developer</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+              <div class="img-box">
+                <img src="http://nabeel.co.in/files/bootsnipp/team/7.jpg" class="img-responsive">
+                <ul class="text-center">
+                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              
+              
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+     
+
+     <!-- Contact Section -->
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+<section id="contact">
+      <div class="section-content">
+        <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+      </div>
+      <div class="contact-section">
+      <div class="container">
+        <form>
+          <div class="col-md-12 form-line">
+              <div class="form-group">
+                <label for="exampleInputUsername">Your name</label>
+                <input type="text" class="form-control" id="" placeholder=" Enter Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+              </div>  
+              <div class="form-group">
+                <label for="telephone">Mobile No.</label>
+                <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for ="description"> Message</label>
+                <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+              </div>
+              <div>
+
+                <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+              </div>
+              
+          </div>
+        </form>
+      </div>
+        </div>
+</section>
+        
+        
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2> Contact us </h2>
+            <p>Feel free to leave us a comment on the
+              <a>Travel Oasis Facebook page</a>
+               to give some feedback about our services!</p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-default btn-lg">
+                  <i class="fa fa-google-plus fa-fw"></i>
+                  <span class="network-name">Google+</span>
+          
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy;www.TravelOasis.com</p>
+    
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/grayscale.min.js' %}"></script>
+
+  </body>
+
+</html>
