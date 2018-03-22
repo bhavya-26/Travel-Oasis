@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Travel Oasis: destination recommender</title>
+    <title>Travel Oasis: Destination Recommender</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -37,6 +37,7 @@
           Menu
           <i class="fa fa-bars"></i>
         </button>
+        <a href="{% url 'qgender' %}" class="btn btn-info">Get Recommendations</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -131,8 +132,7 @@
             /*#endregion responsive code end*/
         };
     </script>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin-ext,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
-    
+        
     <div id="jssor_1" style="position:relative;margin:5px auto;top:48px;left:0px;width:980px;height:420px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -290,7 +290,7 @@ place to go.
           <div class="row pt-md">
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="http://nabeel.co.in/files/bootsnipp/team/1.jpg" class="img-responsive">
+               <!--  <img src="http://nabeel.co.in/files/bootsnipp/team/1.jpg" class="img-responsive"> -->
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -299,12 +299,12 @@ place to go.
               </div>
               <h1>Shifa Samreen</h1>
               <h2>Co-founder/ Operations</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              
             </div>
               
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="http://nabeel.co.in/files/bootsnipp/team/2.jpg" class="img-responsive">
+                <img src="{% static "img/3.png" %}" alt="My image"/>
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -313,11 +313,11 @@ place to go.
               </div>
               <h1>Preeti Saharan</h1>
               <h2>Co-founder/ Projects</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="http://nabeel.co.in/files/bootsnipp/team/3.jpg" class="img-responsive">
+                <img src="{% static "img/6.png" %}" alt="My image"/>
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -327,11 +327,10 @@ place to go.
                 <br>
               <h1>Bhavya Bansal</h1>
               <h2>Co-founder/ Marketing</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="http://nabeel.co.in/files/bootsnipp/team/4.jpg" class="img-responsive">
+                <img src="{% static "img/2.jpg" %}" />
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -340,11 +339,11 @@ place to go.
               </div>
               <h1>Bhawna Sharma</h1>
               <h2>Designer</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="http://nabeel.co.in/files/bootsnipp/team/5.jpg" class="img-responsive">
+                <img src="{% static "img/1.png" %}" alt="My image"/>
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -353,11 +352,11 @@ place to go.
               </div>
               <h1>Shreya Mukharjee</h1>
               <h2>Web Developer</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="http://nabeel.co.in/files/bootsnipp/team/6.jpg" class="img-responsive">
+                <img src="{% static "img/1.png" %}" alt="My image"/>
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -366,11 +365,11 @@ place to go.
               </div>
               <h1>Kritika Sirya</h1>
               <h2>Fullstack Developer</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="http://nabeel.co.in/files/bootsnipp/team/7.jpg" class="img-responsive">
+                <img src="{% static "img/4.png" %}" alt="My image"/>
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -390,48 +389,6 @@ place to go.
      
 
      <!-- Contact Section -->
-        <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  
-<section id="contact">
-      <div class="section-content">
-        <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
-        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
-      </div>
-      <div class="contact-section">
-      <div class="container">
-        <form>
-          <div class="col-md-12 form-line">
-              <div class="form-group">
-                <label for="exampleInputUsername">Your name</label>
-                <input type="text" class="form-control" id="" placeholder=" Enter Name">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail">Email Address</label>
-                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
-              </div>  
-              <div class="form-group">
-                <label for="telephone">Mobile No.</label>
-                <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for ="description"> Message</label>
-                <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
-              </div>
-              <div>
-
-                <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-              </div>
-              
-          </div>
-        </form>
-      </div>
-        </div>
-</section>
-        
         
     <section id="contact" class="content-section text-center">
       <div class="container">

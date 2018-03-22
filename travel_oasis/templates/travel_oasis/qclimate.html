@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+{% load staticfiles %}
 <html>
 
 <head>
   <title>Travel Oasis</title>
-  <link rel="stylesheet" href="TravelOasis.css">
- 
+  <link href="{% static 'css/qclimate.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 </head>
 
   <body>
@@ -25,8 +25,8 @@
   <input type="radio" class="radio" name="climate" value="Hot and Breezy"><label style="font-size: 30px;">Hot and Breezy</label> <br>
 
   
-  <input type="button" value="Previous"   ></input>
- <input type="button" class="n" value="Next"></input>
+ <a href="{% url 'qgender' %}" class="btn btn-info">Previous</a>
+  <a href="{% url 'qduration' %}" class="btn btn-info">Next</a>
 
   </form>
   

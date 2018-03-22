@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+{% load staticfiles %}
 <html>
 
 <head>
   <title>Travel Oasis</title>
-  <link rel="stylesheet" href="TravelOasisQ3.css">
+   <link href="{% static 'css/qsolo.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
  
 </head>
 
@@ -15,7 +16,7 @@
   <form align="center" >
 
   <i><h1 align="center" style="color:#DC143C;font-family:verdana;font-size:500%">TRAVEL OASIS</h1></i>
-  <b><h2 align="center" style="color:#FF8C00;font-family:Comic Sans MS;font-size:300%">Duration of the trip</h2></b>
+  <b><h2 align="center" style="color:#FF8C00;font-family:Comic Sans MS;font-size:300%">How would you like to travel?</h2></b>
 
 
   <input type="radio" class="radio" name="group"  value="Group" checked> <label style="font-size: 30px;">Group</label><br>
@@ -24,9 +25,8 @@
 
   
 
-  
-  <input type="button" value="Previous"  ></input>
-  <input type="button" class="n" value="Next"></input>
+  <a href="{% url 'qduration' %}" class="btn btn-info">Previous</a>
+
 
   </form>
   
