@@ -1,5 +1,5 @@
 body {
-    background-image: url("Duration.jpg");
+    background: url("/static/img/Duration.jpg") 50% 0 no-repeat fixed;
     background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;

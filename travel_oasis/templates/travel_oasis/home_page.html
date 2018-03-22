@@ -29,15 +29,15 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse<!--expand-lg navbar-light fixed-top-->" id="mainNav">
+    <div class="wrapper-nav">
+      <h2 style="margin: 10px; padding: 10px; ">Travel Oasis</p>
+      <nav class="navbar navbar-inverse<!--expand-lg navbar-light fixed-top-->" id="mainNav">
       <div class="container">
-         <p style="font-size:160%;">Travel Oasis</p>
        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">TravelOasis</a>-->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <a href="{% url 'qgender' %}" class="btn btn-info">Get Recommendations</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -61,7 +61,13 @@
              <!-- ****************************************************CHANGES TILL HERE*******************************************************************-->
     
       </div>
+      <div class="right">
+      <a href="{% url 'qgender' %}" class="btn btn-info">Get Recommendations</a>
+    </div>
     </nav>
+    </div>
+    
+    
 
     <!-- Slider -->
 
@@ -215,9 +221,6 @@ place to go.
           </div>
               <div id="particles" class="col-md-6"></div>
         </div>
-            <span ><a href="#about" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a></span>
       </div>
         </div>
     </header>
@@ -290,7 +293,7 @@ place to go.
           <div class="row pt-md">
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-               <!--  <img src="http://nabeel.co.in/files/bootsnipp/team/1.jpg" class="img-responsive"> -->
+               <img src="{% static "img/1.png" %}" alt="My image"/>
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -304,7 +307,7 @@ place to go.
               
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="{% static "img/3.png" %}" alt="My image"/>
+                <img src="{% static "img/1.png" %}" alt="My image"/>
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -317,7 +320,7 @@ place to go.
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="{% static "img/6.png" %}" alt="My image"/>
+                <img src="{% static "img/1.png" %}" alt="My image"/>
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -330,7 +333,7 @@ place to go.
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="{% static "img/2.jpg" %}" />
+                <img src="{% static "img/1.png" %}" />
                 <ul class="text-center">
                   <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                   <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -367,19 +370,6 @@ place to go.
               <h2>Fullstack Developer</h2>
               
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-              <div class="img-box">
-                <img src="{% static "img/4.png" %}" alt="My image"/>
-                <ul class="text-center">
-                  <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                  <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                  <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                </ul>
-              </div>
-              
-              
-             
-          </div>
         </div>
       </div>
     </div>

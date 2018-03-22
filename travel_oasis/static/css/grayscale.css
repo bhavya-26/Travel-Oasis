@@ -51,6 +51,9 @@ a:focus, a:hover {
   color: #1d9b6c;
 }
 
+.wrapper-nav {
+    flex: auto;
+}
 
 /* *****************************MY (HOW IT WORKS) CSS STARTED ****************************/
 
@@ -126,8 +129,8 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;

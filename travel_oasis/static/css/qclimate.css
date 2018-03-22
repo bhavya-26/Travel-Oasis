@@ -1,5 +1,5 @@
 body {
-    background-image: url("Lightning.gif");
+    background: url("/static/img/Lightning.gif") 50% 0 no-repeat fixed;
     background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;

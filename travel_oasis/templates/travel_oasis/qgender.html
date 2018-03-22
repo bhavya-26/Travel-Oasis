@@ -4,10 +4,10 @@
 <head>
   <title>Travel Oasis</title>
   <link href="{% static 'css/qgender.css' %}" rel="stylesheet">
-<!--   <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
- -->  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<!--   <link href="{% static 'css/grayscale.css' %}" rel="stylesheet"> -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
  
-</head> 9+
+</head> 
 
   <body>
   <div class="p">
@@ -26,7 +26,7 @@
 
   <input type="radio" class="radio" name="gender" id="Other" value="Other"><label style="font-size: 30px;">Others</label> <br>
 
-  
+  <a href="{% url 'home_page' %}" class="btn btn-info">Previous</a>
   <a href="{% url 'qclimate' %}" class="btn btn-info">Next</a>
   </form>
   
