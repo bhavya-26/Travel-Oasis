@@ -21,7 +21,7 @@ margin-left:200px;
 	
 }
 
-.p input[type="button"]{
+.Gender input[type="button"]{
 	background-color: 	#FFA07A	;
 	border:none;
 	outline:none;
@@ -38,7 +38,7 @@ margin-left:200px;
 	
 }
 
-.p input[type="button"]:hover
+.Gender input[type="button"]:hover
 {
 	cursor:pointer;
 	background:#39dc79;
