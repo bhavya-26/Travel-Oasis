@@ -4,6 +4,9 @@ from django.shortcuts import render
 
 def home_page(request):
     return render(request, 'travel_oasis/home_page.html', {})
+	
+def login(request):
+    return render(request, 'travel_oasis/login.html', {})
 
 def contact_us(request):
     return render(request, 'travel_oasis/contact_us.html', {})
@@ -21,5 +24,3 @@ def qsolo(request):
 def qduration(request):
     return render(request, 'travel_oasis/qduration.html', {})
 
-def login(request):
-    return render(request, 'travel_oasis/login.html', {})

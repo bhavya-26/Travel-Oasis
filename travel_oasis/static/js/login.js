@@ -64,7 +64,7 @@ var onComplete = function() {
 
     // load the next question
     function putQuestion() {
-        inputLabel.innerHTML = questions[position].question
+        document.getElementById('inputLabel').innerHTML = questions[position].question
         inputField.type = questions[position].type || 'text'
         inputField.value = questions[position].answer || ''
         inputField.focus()
